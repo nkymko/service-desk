@@ -1,0 +1,65 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    transition: 0.4s ease-in-out;
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar .text-light{
+    transition: 0.4s ease-in-out;
+}
+
+.navbar .nav-item a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: 0.2s ease;
+}
+
+.navbar .nav-item .btn{
+    background-color: #469ddf;
+    color: white;
+}
+
+.navbar .nav-item .btn:hover{
+    filter: brightness(90%);
+    transition: 0.2s ease;
+}
+
+main section-1 .background img{
+    filter: brightness(60%);
+    z-index: -1;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+main section-1 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+main section-1 .container .text-hero h2{
+    font-weight: 700;
+}
+
+main section-1 .container .form .input-group .form-control,
+main section-1 .container .form .input-group button{
+    border-radius: 0;
+}
+
+main section-1 .container .form .input-group .form-control:focus{
+    outline: none !important;
+    box-shadow: none;
+}
