@@ -5,8 +5,8 @@
 
     <main>
         <section-1>
-            <div class="background">
-                <img src="{{ asset('img/walkot1.jpg') }}" alt="" class="w-100 position-absolute" style="top: 0;">
+            <div class="background position-absolute"  style="top: 0;">
+                <img src="{{ asset('img/walkot1.jpg') }}" alt="" class="w-100">
             </div>
             <div class="container">
                 <div class="text-hero mt-5">

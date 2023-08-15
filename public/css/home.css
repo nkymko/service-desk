@@ -1,5 +1,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    max-width: 2300px;
+    margin: auto;
 }
 
 .navbar{
@@ -30,6 +32,11 @@ body{
 .navbar .nav-item .btn:hover{
     filter: brightness(90%);
     transition: 0.2s ease;
+}
+
+main section-1 .background{
+    z-index: -1;
+    max-width: 2300px;
 }
 
 main section-1 .background img{
