@@ -19,3 +19,10 @@ Route::get('/', function () {
         'style' => 'home',
     ]);
 });
+
+Route::get('/login', function () {
+    return view('login', [
+        'title' => 'Service Desk',
+        'style' => 'login',
+    ]);
+});
