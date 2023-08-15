@@ -34,12 +34,23 @@ body{
     transition: 0.2s ease;
 }
 
-main section-1 .background{
-    z-index: -1;
-    max-width: 2300px;
+main{
+    display: flex;
+    flex-direction: column;
 }
 
-main section-1 .background img{
+
+main section-1{
+    z-index: -1;
+    max-width: 2300px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('../img/walkot1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 75px 0px;
+}
+
+/* main section-1 .background img{
     filter: brightness(60%);
     z-index: -1;
     user-drag: none;
@@ -48,7 +59,8 @@ main section-1 .background img{
     -webkit-user-drag: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-}
+    max-height: 700px;
+} */
 
 main section-1 .container{
     display: flex;
@@ -69,4 +81,54 @@ main section-1 .container .form .input-group button{
 main section-1 .container .form .input-group .form-control:focus{
     outline: none !important;
     box-shadow: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+span{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+.item{
+    background: #fff;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 5px solid rgba(0,0,0,0.07);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.item:hover{
+    background: #E3F4F4;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,0.2);
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.item:hover .item,
+.item:hover span.icon{
+    background: #fff;
+    border-radius: 10px;
+    -webkit-transition: all 0.5s ease 05;
+    transition: all 0.5s ease 0s;
+}
+.item:hover h6,
+.item:hover p{
+    color: #000000;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.item .icon{
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #0C356A;
+    width: 90px;
+    height: 90px;
+    line-height: 96px;
+    border-radius: 50px;
 }

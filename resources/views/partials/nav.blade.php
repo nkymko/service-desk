@@ -1,7 +1,7 @@
 <header class="sticky-top">
     <nav class="navbar navbar-expand-lg p-2">
         <div class="container-fluid">
-          <a class="navbar-brand d-flex align-items-center text-light" href="#" style="gap: 20px">
+          <a class="navbar-brand d-flex align-items-center" href="#" style="gap: 20px">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lambang_Kota_Jakarta_Timur.png/640px-Lambang_Kota_Jakarta_Timur.png" alt="logo" width="40">
             Service Desk Kominfotik
           </a>
@@ -11,7 +11,7 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav" style="gap:20px">
               <li class="nav-item">
-                <a class="nav-link active text-light" id="navHome" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" id="navHome" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="btn" href="#">Login</a>
