@@ -26,3 +26,10 @@ Route::get('/login', function () {
         'style' => 'login',
     ]);
 });
+
+Route::get('/register', function () {
+    return view('register', [
+        'title' => 'Service Desk',
+        'style' => 'register',
+    ]);
+});
