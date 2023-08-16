@@ -1,41 +1,47 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.main')
 
-<head>
-    <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/register.css') }}">
-</head>
+@section('base')
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-header">Register</div>
-            <div class="card-body">
-                <form method="POST" action="">
-                    @csrf
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="name" name="name" class="form-control" required>
+    <div class="wrapper">
+        <div class="container main">
+            <div class="row">
+                <div class="col-md-6 side-image">
+                    <!-----image-------->
+                    <img src="{{ asset('img/lambang.png') }}" alt="">
+                    <div class="text">
+                        <p>Selamat Datang kembali di Website Service Desk<i>-Kominfotik</i></p>
                     </div>
-                    <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="username" name="username" class="form-control" required>
+                </div>
+                <div class="col-md-6 right">
+                    <div class="input-box">
+                        <header>Create account</header>
+                        <div class="input-field">
+                            <input type="text" class="input" id="name" required autocomplete="off">
+                            <label for="name">Nama</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="input" id="email" required autocomplete="off">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="input" id="password" required>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="submit" class="submit" value="Sign Up">
+                        </div>
+                        <div class="signin">
+                            <span>Already have an account? <a href="#">Log in here</a></span>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Register</button>
-                    </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 </body>
 
-</html>
+
+
+
+@endsection
