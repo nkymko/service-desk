@@ -21,14 +21,14 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('login', [
+    return view('login.index', [
         'title' => 'Service Desk',
         'style' => 'login',
     ]);
 });
 
 Route::get('/register', function () {
-    return view('register', [
+    return view('register.index', [
         'title' => 'Service Desk',
         'style' => 'register',
     ]);
