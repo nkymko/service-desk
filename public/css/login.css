@@ -1,6 +1,11 @@
 *{
     font-family: 'Montserrat', sans-serif;
 }
+
+.container{
+    background-color: #F4D160;
+}
+
 .wrapper{
     background: #ececec;
     padding: 0 20px 0 20px;
@@ -39,11 +44,11 @@ img{
     transform: translate(-50%, -50%);
 }
 .text p{
-    color: #fff;
+    color: #1D5D9B;
     font-size: 30px;
 }
 i{
-    font-weight: 400;
+    font-weight: 600;
     font-size: 15px;
 }
 .right{
